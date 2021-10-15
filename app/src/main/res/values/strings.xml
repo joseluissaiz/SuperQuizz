@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SuperQuiz</string>
+    <string name="q_meryl">Meryl Streep has won two Academy Awards</string> <!--false-->
+    <string name="q_moroc">Marrakesh is the capital of Morocco</string> <!--false-->
+    <string name="q_gin">Gin is typically included in a Long Island Iced Tea</string> <!--true-->
+    <string name="q_unic">The unicorn is the national animal of Scotland</string> <!--true-->
+    <string name="q_frien">There are 219 episodes of Friends</string> <!--false-->
+    <string name="q_bone">Your radius bone is in your leg</string> <!--false-->
+    <string name="q_perio">The only letter not in the periodic table is the letter J</string> <!--true-->
+    <string name="q_diney">Walt Disney holds the record for the most Oscars</string> <!--true-->
+
+
+
+</resources>

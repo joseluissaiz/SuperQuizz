@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/contentLayout"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/questionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center">
+
+            <!--Mostrar resultados-->
+            <LinearLayout
+                android:id="@+id/resultLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/resultImageView"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"/>
+
+                <TextView
+                    android:id="@+id/resultTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="You failed/nailed it\n\nThe correct answer is"
+                    android:layout_marginTop="3dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/resultAnswerTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="TRUE,FALSE"
+                    android:layout_marginTop="3dp"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/answerButtonsLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <!--Boton falso-->
+                <Button
+                    android:id="@+id/falseButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:backgroundTint="#950000"
+                    android:text="FALSE"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    app:icon="@color/teal_200"
+                    app:iconTint="#FFFFFF" />
+
+                <!--Boton verdadero-->
+                <Button
+                    android:id="@+id/trueButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TRUE"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:backgroundTint="#059500"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/questionImageView"
+                android:layout_width="260dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/not_available"/>
+
+            <TextView
+                android:id="@+id/questionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Some question needs to appear here"
+                android:layout_marginTop="3dp"
+                android:padding="20dp"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <!--Boton atras-->
+        <ImageButton
+            android:id="@+id/previousButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_back_arrow"/>
+
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/questionReference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:text="1/30"/>
+
+        </LinearLayout>
+
+        <!--Boton next-->
+        <ImageButton
+            android:id="@+id/nextButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_next_arrow"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
